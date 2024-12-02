@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Titre de la page</title>
+    </head>
+    <body>
+        <header class="header">
+            <img src="assets/images/800x200.png" alt="Banner" />
+            <h1 class="header-title">Bienvenue sur mon site !</h1>
+            <nav>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#article1">Blog</a></li>
+                <li><a href="blog.html">Blog bonus</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <form action="index.php" method="post">
+                <fieldset>
+                    <legend>Me contacter</legend>
+
+                    <div>
+                        <label for="name">Nom:</label>
+                        <input type="text" name="name" id="name" placeholder="Entrez votre nom" minlength="2" maxlength="20" />
+                    </div>
+
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Entrez votre email" required />
+                    </div>
+
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="70" rows="10" placeholder="Ecrivez votre message ici..."></textarea>
+                    </div>
+                    <div>
+                        <label for="sendCopy">Recevoir une copie:</label>
+                        <input type="checkbox" name="sendCopy" id="sendCopy" placeholder="Entrez votre email" checked />
+                    </div>
+
+                    <div>
+                        <button type="submit">Envoyer ma demande</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">
+            <nav>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </footer>
+    </body>
+</html>
